@@ -9,7 +9,7 @@ The goal is to estimate delay and resource usage for each ground-handling compan
 
 ---
 
-## ✈️ Project Overview
+##  1. Project Overview
 
 The notebook `deicing.ipynb` performs three main tasks:
 
@@ -33,7 +33,7 @@ The notebook `deicing.ipynb` performs three main tasks:
 
 ---
 
-## 🧮 Methods & Assumptions
+## 2. Methods & Assumptions
 
 - **Time conversion**  
   - All timetable fields (e.g., `SOBT`, `EOBT`, `EIBT`) are converted from `HH:MM` strings (or Excel-style floats) into minutes since midnight for easier arithmetic.
@@ -52,7 +52,7 @@ The notebook `deicing.ipynb` performs three main tasks:
 
 ---
 
-## 📁 Data Inputs
+## 3. Data Inputs
 
 The notebook expects the following CSV files in the working directory:
 
@@ -70,7 +70,7 @@ The notebook expects the following CSV files in the working directory:
 
 ---
 
-## ▶️ How to Run
+## 4. How to Run
 
 1. Clone this repository and move into the project directory:
 
