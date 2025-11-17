@@ -77,3 +77,27 @@ The notebook expects the following CSV files in the working directory:
    ```bash
    git clone https://github.com/<your-id>/deicing-queue-analysis.git
    cd deicing-queue-analysis
+
+2. Create a virtual environment (optional but recommended):
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+
+3. Install dependencies:
+
+   ```bash
+   pip install pandas
+
+4. Place your CSV files (*_queue.csv, VTT.csv, arr.csv, merged_eobt_data.csv) in the same directory as the notebook.
+
+5. Open the notebook:
+
+   ```bash
+   jupyter notebook "deicing.ipynb"
+
+6. Run the cells in order:
+
+   - Sections for each handler (KAS, AAP, SHP, SPI, JAS)
+   - Integrated delay estimation
+   - Gate occupancy forecast
